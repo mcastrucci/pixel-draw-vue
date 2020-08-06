@@ -23,8 +23,8 @@ export default {
       isDrawing: false,
       selectedColor: defaultColor,
       pixels: {
-        rows: 50,
-        columns: 50
+        rows: 100,
+        columns: 100
       }
     }
   },

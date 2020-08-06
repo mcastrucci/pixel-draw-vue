@@ -1,7 +1,7 @@
 <template>
   <div 
     @mouseup="handleMouseUp(color)" 
-    @mousedown="handleMouseDown" 
+    @mousedown="handleMouseDown(color, $event)" 
     @mouseover="handleMouseOver(color, $event)"
     :class="['pixel', color, current ? 'current' : '']">
   </div>
@@ -17,9 +17,12 @@
         isInCanvas: Boolean,
       },
       methods: {
-        handleMouseDown: function () {
+        handleMouseDown: function (color, event) {
           if (this.isInCanvas) {
                   this.$root.$emit('mouseDownOnPixel');
+          }
+          if (this.isInCanvas) {
+            this.$root.$emit('drawPixel', color, event);
           }
         },
         handleMouseUp: function (color) {
@@ -40,7 +43,6 @@
 </script>
 <style scoped>
 .pixel {
-  border: 1px solid lightgray;
   box-sizing: border-box;
   cursor: crosshair;
 }

@@ -31,8 +31,8 @@
 <style>
     .canvas {
         display: grid;
-        grid-template-columns: repeat(50, 1fr);
-        grid-template-rows: repeat(50, 1fr);
+        grid-template-columns: repeat(100, 1fr);
+        grid-template-rows: repeat(100, 1fr);
         justify-content: stretch;
         height: 80vh;
     }
