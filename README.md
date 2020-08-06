@@ -1,3 +1,6 @@
+![pixel_draw_sample](https://user-images.githubusercontent.com/33734490/89522263-50095f80-d7b7-11ea-9d80-2c62308574d2.gif)
+
+
 # pixel-drawing
 
 ## Project setup
